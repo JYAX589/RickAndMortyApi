@@ -1,5 +1,5 @@
 export const Characters = async (pageNumber = 1, searchQuery = '') => {
-  // Construye la URL dentro de la función usando los parámetros
+
   const Api_url = `https://rickandmortyapi.com/api/character?page=${pageNumber}&name=${encodeURIComponent(searchQuery)}`
 
   try {
