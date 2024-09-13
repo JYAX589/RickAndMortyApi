@@ -1,6 +1,6 @@
 import { TextField, Box } from '@mui/material'
 
-const SearchBar = ({ onSearch }) => {
+export const SearchBar = ({ onSearch }) => {
 
     const handleSearch = (event) => {
         if (event.key === 'Enter') {
@@ -16,6 +16,5 @@ const SearchBar = ({ onSearch }) => {
     )
 }
 
-export default SearchBar
 
 

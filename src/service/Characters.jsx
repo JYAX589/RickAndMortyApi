@@ -16,4 +16,4 @@ export const Characters = async (pageNumber = 1, searchQuery = '') => {
     console.error(error);
     throw error
   }
-};
+}

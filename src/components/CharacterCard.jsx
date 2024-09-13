@@ -1,6 +1,6 @@
 import { Card, CardContent, Typography, CardMedia } from '@mui/material'
 
-const CharacterCard = ({ character }) => {
+export const CharacterCard = ({ character }) => {
   return (
     <Card sx={{ maxWidth: 300 }}>
       <CardMedia component="img" image={character.image} alt={character.name}sx={{ height: 300 }}/>
@@ -12,4 +12,3 @@ const CharacterCard = ({ character }) => {
   );
 };
 
-export default CharacterCard

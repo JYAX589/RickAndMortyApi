@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Characters } from '../service/Characters'
 
-const useCharacters = (pageNumber, searchQuery) => {
+export const useCharacters = (pageNumber, searchQuery) => {
   const [characters, setCharacters] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -31,4 +31,3 @@ const useCharacters = (pageNumber, searchQuery) => {
   return { characters, loading, error, info }
 }
 
-export default useCharacters

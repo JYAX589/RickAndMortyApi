@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { Box, Grid, Typography, CircularProgress, Pagination } from '@mui/material'
-import CharacterCard from './CharacterCard'
-import SearchBar from './SearchBar'
-import useCharacters from '../hooks/useCharacters'
+import {CharacterCard} from './CharacterCard'
+import {SearchBar} from './SearchBar'
+import {useCharacters} from '../hooks/useCharacters'
 
-function App() {
+export function App() {
   const [searchQuery, setSearchQuery] = useState('')
   const [pageNumber, setPageNumber] = useState(1)
   const { characters, loading, error, info } = useCharacters(pageNumber, searchQuery)
@@ -44,4 +44,3 @@ function App() {
   );
 }
 
-export default App
